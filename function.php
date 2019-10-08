@@ -1,3 +1,4 @@
+<?php
 $table_limit = [];
 function get_table_limit ($data, $page = 1){
     global $table_limit;
