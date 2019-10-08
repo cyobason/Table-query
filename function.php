@@ -39,3 +39,8 @@ function get_table_limit ($data, $page = 1){
         }
     }
 }
+
+function get_data($limit){
+    // 下面只为例子展示，可自行更改成自己的查询语句
+    return $db->fetchAll('select * from table_'.$limit['table'].' where condition = ? limit '.$limit['limit']);
+}
